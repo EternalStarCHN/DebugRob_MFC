@@ -13,21 +13,15 @@ typedef unsigned           int uint32_t;
 typedef enum pointMode__  : uint8_t
 {
   /* Default */
-  POINT_DEFAULT = 0,
+  POINT_DEFAULT = 0,//0x00
 
   /* Servo commands */
-  HAND_UP,
-  HEAD_MOVE,
+  ACK = 8, //0x08
+  LEFT_HAND_UP = 9,//0x09
+  HEAD_MOVE = 10,//0x0A
+  RIGHT_HAND_UP = 12//0x0C
+  /* Callback */
 
-  /* Motor Turn Commands */
-  TURN_RIGHT,
-  TURN_LEFT,
-  TURN_BACK,
-  TURN_ANYANGLE,
-
-  /* Commands over */
-  OVER_,
-  QUIT_
 } PointMode_t;
 
 namespace Debug

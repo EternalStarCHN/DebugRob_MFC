@@ -77,10 +77,8 @@ public:
   int step;//步骤
   
   /* 两种模式相关函数********************************************/
-  void PointMode(PointMode_t, int16_t angle = 0, uint8_t lineSpeed = 10);//点模式
+  void Mode(PointMode_t pointMode, int8_t command);//传输协议
   /* 0xF0 0x04 0xhh 0xhh 0xhh 0x0A */
-  void LineMode(uint8_t point, uint8_t delay = 0, uint8_t transSpeed = 40);//线模式
-  /* 0xF0 0x03 0xhh 0xhh 0x0A */
 
 
 
