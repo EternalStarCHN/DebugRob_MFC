@@ -3,6 +3,7 @@
 #include <string>
 
 #include "cv.h"
+#include "highgui.h"//
 #include "CvvImage.h"
 #include "opencv.hpp"
 #include "debugrob.h"
@@ -23,6 +24,9 @@ public:
   virtual BOOL OnInitDialog();
   afx_msg void OnClose();
 
+  IplImage* m_Frame;
+  CvvImage m_CvvImage;
+  CString m_linedegree;
   /**
    * @func: DoDataExchange - DDX/DDV支持
    *      : OnPaint - 向对话框添加最小化按钮
@@ -58,17 +62,19 @@ public:
   afx_msg void OnBnClickedPatern12();
   afx_msg void OnBnClickedBtauto12();
   afx_msg void OnTimer(UINT_PTR nIDEvent);
-  int _1To2(void);
-  int _2To3(void);
-  int _2To4(void);
-  int _3To5(void);
-  int _3To6(void);
-  int _4To5(void);
-  int _4To6(void);
-  int _5To7(void);
-  int _5To8(void);
-  int _6To7(void);
-  int _6To8(void);
+  int _1To2(void);// 1
+  int _2To3(void);// 2
+  int _2To4(void);// 3
+  int _3To5(void);// 4
+  int _3To6(void);// 5
+  int _4To5(void);// 6
+  int _4To6(void);// 7
+  int _5To7(void);// 8
+  int _5To8(void);// 9
+  int _6To7(void);// 10
+  int _6To8(void);// 11
+  int _7To1(void);// 12
+  int _8To1(void);// 13
   CString m_locationstart;
   CString m_locationnext;
   CString m_locationgold;

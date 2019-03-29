@@ -13,15 +13,15 @@ typedef unsigned           int uint32_t;
 typedef enum pointMode__  : uint8_t
 {
   /* Default */
-  POINT_DEFAULT = 0,//0x00
+  NO_ACTION = 0,                //0x00 无动作
 
   /* Servo commands */
-  ACK = 8, //0x08
-  LEFT_HAND_UP = 9,//0x09
-  HEAD_MOVE = 10,//0x0A
-  RIGHT_HAND_UP = 12//0x0C
+  LEFT_HAND_UP = 9,             //0x09 举左手
+  HEAD_MOVE = 10,               //0x0A 转头
+  RIGHT_HAND_UP = 12,           //0x0C 举右手
+  HAND_UP = 13,                 //0x0D 举双手
   /* Callback */
-
+  ACK = 8                       //0x08 需要下位机反馈
 } PointMode_t;
 
 namespace Debug
