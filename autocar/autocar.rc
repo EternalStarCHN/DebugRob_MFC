@@ -113,6 +113,7 @@ BEGIN
     PUSHBUTTON      "≤‚ ‘∞¥≈•",IDC_BTTEST,305,77,37,78
     PUSHBUTTON      "1 to 2",IDC_BTAUTO12,303,166,50,14
     PUSHBUTTON      "ÕºœÒ ∂±≤‚ ‘",IDC_BTImageTest,305,56,62,14
+    PUSHBUTTON      "≈ƒ’’",IDC_BTTakePhoto,238,311,50,14
 END
 
 

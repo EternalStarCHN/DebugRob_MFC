@@ -149,4 +149,5 @@ private:
 
 public:
 	afx_msg void OnBnClickedBt_ImageTest();//Í¼ÏñÊ¶±ğ²âÊÔ
+	afx_msg void OnBnClickedBttakephoto();
 };
