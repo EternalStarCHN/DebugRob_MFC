@@ -124,6 +124,7 @@ private:
   Contor_t _FindContour(Mat & binaryMat);
   const Contor_t & _FindContour();
   int _TemplateMatching(Mat & srcMat);
+  int _HashMatching(Mat & srcMat);
 
   /* 私有数据区 *********************************************/
   CString _msgSerialSend;
