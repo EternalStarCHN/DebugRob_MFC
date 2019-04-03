@@ -134,6 +134,7 @@ private:
 
   /* 图形识别用 *********************************************/
   const vector<pair<Mat, int>> _TARGET_IMAGE_LIST;
+  const vector<pair<Mat, int>> _TARGET_IMAGE_LIST1;
 
   VideoCapture _cameraForPic;
   VideoCapture _cameraForPath;
