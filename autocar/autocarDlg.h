@@ -83,6 +83,7 @@ public:
   int sign;//现态
   int next;//次态
   int step;//步骤
+  int go = 0;//判断是否为起跑用，0为起跑指令
   
   /* 两种模式相关函数********************************************/
   void Mode(PointMode_t pointMode, int8_t command);//传输协议
