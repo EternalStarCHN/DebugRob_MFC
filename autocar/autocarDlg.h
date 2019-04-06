@@ -3,15 +3,17 @@
 #include <string>
 
 #include "cv.h"
-#include "highgui.h"//
+#include "highgui.h"
 #include "CvvImage.h"
 #include "opencv.hpp"
 #include "debugrob.h"
 #include "./serial/ComPort.h"
 #include "resource.h"
+
 using namespace std;
 using namespace cv;
 using namespace Debug;
+
 // 自定义MFC消息常量 串口数据接收消息 @PostMessageFunc OnReceiveData()
 #define WM_RECV_SERIAL_DATA WM_USER + 101
 using Contors_t = vector<vector<Point>>;
@@ -125,6 +127,7 @@ private:
   const Contor_t & _FindContour();
   int _TemplateMatching(Mat & srcMat);
   int _HashMatching(Mat & srcMat);
+  void CautocarDlg::_OldalgorithmMatching();
 
   /* 私有数据区 *********************************************/
   CString _msgSerialSend;
