@@ -19,6 +19,18 @@
     <Filter Include="Serial">
       <UniqueIdentifier>{5295ad18-9543-46e0-aa93-a90ae76311f1}</UniqueIdentifier>
     </Filter>
+    <Filter Include="相关技术储备">
+      <UniqueIdentifier>{fe75cd6c-652b-4120-bdb5-fb19a3db13c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="相关技术储备\串口通讯延迟">
+      <UniqueIdentifier>{13d87c1e-c8ac-4d8c-8dd0-42213e6a8abc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="相关技术储备\图像识别">
+      <UniqueIdentifier>{ceb81a8a-a9b8-4c97-a8cb-ac0fbbbce0b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="相关技术储备\地图存储和读取">
+      <UniqueIdentifier>{6a678fc0-09cf-4c56-801c-5e27484d71e0}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="autocar.cpp">
