@@ -54,6 +54,9 @@
     <ClCompile Include="DebugRob.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="算术编码.cpp">
+      <Filter>相关技术储备\串口通讯延迟</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="autocar.h">
@@ -100,6 +103,9 @@
   <ItemGroup>
     <None Include="res\autocar.rc2">
       <Filter>资源文件</Filter>
+    </None>
+    <None Include="..\相关技术储备\说明.MD">
+      <Filter>相关技术储备</Filter>
     </None>
   </ItemGroup>
   <ItemGroup>
