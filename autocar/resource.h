@@ -84,6 +84,7 @@
 #define IDC_BTAUTO81                    1058
 #define IDC_BTAUTO71                    1059
 #define IDC_EDITLINENUMBER              1060
+#define IDC_BTAUTO72                    1060
 #define IDC_EDIT_Down                   1061
 #define IDC_EDIT_P3                     1062
 #define IDC_EDIT_UP                     1062
@@ -99,6 +100,7 @@
 #define IDC_BTTakePhoto                 1068
 #define IDC_BUTTON3                     1069
 #define IDC_BTHash                      1069
+#define IDC_BTAUTO24                    1070
 
 // Next default values for new objects
 // 
@@ -106,7 +108,7 @@
 #ifndef APSTUDIO_READONLY_SYMBOLS
 #define _APS_NEXT_RESOURCE_VALUE        131
 #define _APS_NEXT_COMMAND_VALUE         32771
-#define _APS_NEXT_CONTROL_VALUE         1070
+#define _APS_NEXT_CONTROL_VALUE         1072
 #define _APS_NEXT_SYMED_VALUE           101
 #endif
 #endif

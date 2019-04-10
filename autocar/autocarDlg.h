@@ -58,11 +58,24 @@ public:
   afx_msg void OnBnClickedBt_AutoDrive();
   afx_msg void OnBnClickedBt_ImageIdentification();
   afx_msg void OnBnClickedBt_Test();
+  afx_msg void OnBnClickedBt_ImageTest();
+  afx_msg void OnBnClickedBttakephoto();
   void ImageRecognition(Mat src);
-
   /* 路线相关函数********************************************/
-  afx_msg void OnBnClickedPatern12();
   afx_msg void OnBnClickedBtauto12();
+  afx_msg void OnBnClickedBtauto23();
+  afx_msg void OnBnClickedBtauto24();
+  afx_msg void OnBnClickedBtauto35();
+  afx_msg void OnBnClickedBtauto36();
+  afx_msg void OnBnClickedBtauto45();
+  afx_msg void OnBnClickedBtauto46();
+  afx_msg void OnBnClickedBtauto57();
+  afx_msg void OnBnClickedBtauto58();
+  afx_msg void OnBnClickedBtauto67();
+  afx_msg void OnBnClickedBtauto68();
+  afx_msg void OnBnClickedBtauto71();
+  afx_msg void OnBnClickedBtauto81();
+  afx_msg void OnBnClickedPatern12();//自动驾驶用
   afx_msg void OnTimer(UINT_PTR nIDEvent);
   int _1To2(void);// 1
   int _2To3(void);// 2
@@ -87,21 +100,12 @@ public:
   
   /* 两种模式相关函数********************************************/
   void Mode(PointMode_t pointMode, int8_t command);//传输协议
-  /* 0xF0 0x04 0xhh 0xhh 0xhh 0x0A */
-
-
-
-
-
-
 protected:
   HICON appIcon_;
-
 private:
   void _SerialOpen(int commNum = 2, int baudRate = 115200);
   void _OnCommReceive(LPVOID pSender, void* pBuf, DWORD InBufferCount) override;
   void _OnCommBreak(LPVOID pSender, DWORD dwMask, COMSTAT stat) override;
-
   //TAG:这里ImageBox应该是一个枚举类型，避免错误
   void _ShowImageOnImageBox(int ImageBox, Mat& frame);
   void _StretchBlt(int ImageBox, CDC& cdcSrc,
@@ -149,11 +153,6 @@ private:
   //TAG: 特征值应该唯一，将两个double值变成一个struct会好
   double _conLength;
   double _conArea;
-
   //TAG: _mode的类型应该设置为一个 枚举类
   int _mode;
-
-public:
-	afx_msg void OnBnClickedBt_ImageTest();//图像识别测试
-	afx_msg void OnBnClickedBttakephoto();
 };
