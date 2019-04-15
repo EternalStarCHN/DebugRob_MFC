@@ -61,6 +61,9 @@ public:
   afx_msg void OnBnClickedBt_ImageTest();
   afx_msg void OnBnClickedBttakephoto();
   void ImageRecognition(Mat src);
+  afx_msg void BTImageRecognition_3or4();  //图像识别测试
+  afx_msg void BTImageRecognition_5or6();  //图像识别测试
+  afx_msg void BTImageRecognition_7or8();  //图像识别测试
   /* 路线相关函数********************************************/
   afx_msg void OnBnClickedBtauto12();
   afx_msg void OnBnClickedBtauto23();

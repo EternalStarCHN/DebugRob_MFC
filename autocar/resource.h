@@ -74,10 +74,13 @@
 #define IDC_EDITLINEDEGREE              1049
 #define IDC_EDIT_I                      1050
 #define IDC_EDIT_D                      1051
+#define IDC_BTID34                      1051
 #define IDC_EDITLINEBUTTON              1052
 #define IDC_EDITLINEBOTTON              1052
+#define IDC_BTID56                      1052
 #define IDC_BTSCANNUMBER                1053
 #define IDC_EDITSCANNUMBER              1054
+#define IDC_BTID78                      1054
 #define IDC_EDITLOCATION                1055
 #define IDC_EDITNEXTLOCATION            1056
 #define IDC_EDITGOLDLOCATION            1057
@@ -101,6 +104,7 @@
 #define IDC_BUTTON3                     1069
 #define IDC_BTHash                      1069
 #define IDC_BTAUTO24                    1070
+#define IDC_LIST1                       1072
 
 // Next default values for new objects
 // 
@@ -108,7 +112,7 @@
 #ifndef APSTUDIO_READONLY_SYMBOLS
 #define _APS_NEXT_RESOURCE_VALUE        131
 #define _APS_NEXT_COMMAND_VALUE         32771
-#define _APS_NEXT_CONTROL_VALUE         1072
+#define _APS_NEXT_CONTROL_VALUE         1073
 #define _APS_NEXT_SYMED_VALUE           101
 #endif
 #endif
