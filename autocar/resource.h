@@ -103,8 +103,8 @@
 #define IDC_BTTakePhoto                 1068
 #define IDC_BUTTON3                     1069
 #define IDC_BTHash                      1069
+#define IDC_BTStop                      1069
 #define IDC_BTAUTO24                    1070
-#define IDC_LIST1                       1072
 
 // Next default values for new objects
 // 

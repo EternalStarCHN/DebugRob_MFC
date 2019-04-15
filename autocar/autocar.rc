@@ -131,6 +131,7 @@ BEGIN
     PUSHBUTTON      "5 or 6",IDC_BTID56,306,313,71,14
     PUSHBUTTON      "7 or 8",IDC_BTID78,306,335,71,14
     GROUPBOX        "Í¼ÏñÊ¶±ð²âÊÔ°´Å¥",IDC_STATIC,299,278,87,77
+    PUSHBUTTON      "¼±Í£",IDC_BTStop,138,262,85,44
 END
 
 
