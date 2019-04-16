@@ -47,9 +47,8 @@ public:
   afx_msg void OnBnClickedBt_CloseSerial();
   afx_msg void OnBnClickedBt_SendToSerial();
   void PrintlnToSerial(const string& message);
-  void PrintToSerial(const string& message);
+ // void PrintToSerial(const string& message);
   afx_msg LONG OnRecvSerialData(WPARAM wParam, LPARAM lParam);
-  //SendData arrays从unsigned char 改为了 const char
   void SendData(const char arrays[], int lenth);
 
   /* OpenCV相关函数 *****************************************/
