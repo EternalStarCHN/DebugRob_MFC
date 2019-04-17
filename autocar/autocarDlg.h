@@ -47,6 +47,7 @@ public:
   afx_msg void OnBnClickedBt_CloseSerial();
   afx_msg void OnBnClickedBt_SendToSerial();
   void PrintlnToSerial(const string& message);
+  char HexToChar(char bChar);
  // void PrintToSerial(const string& message);
   afx_msg LONG OnRecvSerialData(WPARAM wParam, LPARAM lParam);
   void SendData(const char arrays[], int lenth);
@@ -80,6 +81,19 @@ public:
   afx_msg void OnBnClickedPatern12();//自动驾驶用
   afx_msg void OnBnClickedBtStop();//急停
   afx_msg void OnTimer(UINT_PTR nIDEvent);
+  void TEST12(void);
+  void TEST23(void);
+  void TEST24(void);
+  void TEST35(void);
+  void TEST36(void);
+  void TEST45(void);
+  void TEST46(void);
+  void TEST57(void);
+  void TEST58(void);
+  void TEST67(void);
+  void TEST68(void);
+  void TEST71(void);
+  void TEST81(void);
   int _1To2(void);// 1
   int _2To3(void);// 2
   int _2To4(void);// 3
@@ -100,7 +114,7 @@ public:
   int next;//次态
   int step;//步骤
   int go = 0;//判断是否为起跑用，0为起跑指令
-  
+  int chose = 0;//判断进入哪个脚本测试函数
   /* 两种模式相关函数********************************************/
   void Mode(PointMode_t pointMode, int8_t command);//传输协议
 protected:
