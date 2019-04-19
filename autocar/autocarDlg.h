@@ -111,6 +111,7 @@ public:
   CString m_locationnext;
   CString m_locationgold;
   int sign;//现态
+  //int nextn;//次态传递变量
   int next;//次态
   int step;//步骤
   int go = 0;//判断是否为起跑用，0为起跑指令
