@@ -76,8 +76,12 @@ public:
   afx_msg void OnBnClickedBtauto58();
   afx_msg void OnBnClickedBtauto67();
   afx_msg void OnBnClickedBtauto68();
-  afx_msg void OnBnClickedBtauto71();
-  afx_msg void OnBnClickedBtauto81();
+  afx_msg void OnBnClickedBtauto78();
+  afx_msg void OnBnClickedBtauto87();
+  afx_msg void OnBnClickedBtauto75();
+  afx_msg void OnBnClickedBtauto76();
+  afx_msg void OnBnClickedBtauto85();
+  afx_msg void OnBnClickedBtauto86();
   afx_msg void OnBnClickedPatern12();//自动驾驶用
   afx_msg void OnBnClickedBtStop();//急停
   afx_msg void OnTimer(UINT_PTR nIDEvent);
@@ -92,21 +96,29 @@ public:
   void TEST58(void);
   void TEST67(void);
   void TEST68(void);
-  void TEST71(void);
-  void TEST81(void);
-  int _1To2(void);// 1
-  int _2To3(void);// 2
-  int _2To4(void);// 3
-  int _3To5(void);// 4
-  int _3To6(void);// 5
-  int _4To5(void);// 6
-  int _4To6(void);// 7
-  int _5To7(void);// 8
-  int _5To8(void);// 9
-  int _6To7(void);// 10
-  int _6To8(void);// 11
-  int _7To1(void);// 12
-  int _8To1(void);// 13
+  void TEST78(void);
+  void TEST87(void);
+  void TEST75(void);
+  void TEST76(void);
+  void TEST85(void);
+  void TEST86(void);
+  int _1To2(void);// 0x01
+  int _2To3(void);// 0x02
+  int _2To4(void);// 0x03
+  int _3To5(void);// 0x04
+  int _3To6(void);// 0x05
+  int _4To5(void);// 0x06
+  int _4To6(void);// 0x07
+  int _5To7(void);// 0x08
+  int _5To8(void);// 0x09
+  int _6To7(void);// 0x0A
+  int _6To8(void);// 0x0B
+  int _7To8(void);// 0x0C
+  int _8To7(void);// 0x0D
+  int _7To5(void);// 0x0E
+  int _7To6(void);// 0x0F
+  int _8To5(void);// 0x10
+  int _8To6(void);// 0x11
   CString m_locationstart;
   CString m_locationnext;
   CString m_locationgold;
@@ -116,6 +128,9 @@ public:
   int step;//步骤
   int go = 0;//判断是否为起跑用，0为起跑指令
   int chose = 0;//判断进入哪个脚本测试函数
+  int exclude1 = 0;//排除标志1
+  int exclude2 = 0;//排除标志2
+  int back = 1;//返回标志
   /* 两种模式相关函数********************************************/
   void Mode(PointMode_t pointMode, int8_t command);//传输协议
 protected:
