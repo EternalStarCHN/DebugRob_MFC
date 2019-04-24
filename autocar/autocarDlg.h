@@ -82,6 +82,8 @@ public:
   afx_msg void OnBnClickedBtauto76();
   afx_msg void OnBnClickedBtauto85();
   afx_msg void OnBnClickedBtauto86();
+  afx_msg void OnBnClickedBtHU_LAR();
+  afx_msg void OnBnClickedBtTURN_BACK();
   afx_msg void OnBnClickedPatern12();//×Ô¶¯¼ÝÊ»ÓÃ
   afx_msg void OnBnClickedBtStop();//¼±Í£
   afx_msg void OnTimer(UINT_PTR nIDEvent);

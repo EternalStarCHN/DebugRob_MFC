@@ -82,7 +82,10 @@
 #define IDC_EDITSCANNUMBER              1054
 #define IDC_BTID78                      1054
 #define IDC_EDITLOCATION                1055
+#define IDC_BTHU_LAR                    1055
 #define IDC_EDITNEXTLOCATION            1056
+#define IDC_BTID36                      1056
+#define IDC_BTTURN_BACK                 1056
 #define IDC_EDITGOLDLOCATION            1057
 #define IDC_BTAUTO81                    1058
 #define IDC_BTAUTO87                    1058
@@ -98,7 +101,6 @@
 #define IDC_BTAUTO85                    1062
 #define IDC_EDITGOLDLOCATION2           1063
 #define IDC_EDITMODE                    1063
-#define IDC_BTAUTO79                    1063
 #define IDC_BTAUTO86                    1063
 #define IDC_EDITLINEDEGREE2             1064
 #define IDC_EDITMODEEVERY               1064
@@ -119,7 +121,7 @@
 #ifndef APSTUDIO_READONLY_SYMBOLS
 #define _APS_NEXT_RESOURCE_VALUE        131
 #define _APS_NEXT_COMMAND_VALUE         32771
-#define _APS_NEXT_CONTROL_VALUE         1073
+#define _APS_NEXT_CONTROL_VALUE         1074
 #define _APS_NEXT_SYMED_VALUE           101
 #endif
 #endif
