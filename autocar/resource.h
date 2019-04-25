@@ -84,7 +84,6 @@
 #define IDC_EDITLOCATION                1055
 #define IDC_BTHU_LAR                    1055
 #define IDC_EDITNEXTLOCATION            1056
-#define IDC_BTID36                      1056
 #define IDC_BTTURN_BACK                 1056
 #define IDC_EDITGOLDLOCATION            1057
 #define IDC_BTAUTO81                    1058
@@ -104,8 +103,10 @@
 #define IDC_BTAUTO86                    1063
 #define IDC_EDITLINEDEGREE2             1064
 #define IDC_EDITMODEEVERY               1064
+#define IDC_BTAUTO53                    1064
 #define IDC_BUTTON1                     1065
 #define IDC_BTTEST                      1065
+#define IDC_BTAUTO54                    1066
 #define IDC_BUTTON2                     1067
 #define IDC_666                         1067
 #define IDC_BTImageTest                 1067
@@ -114,6 +115,12 @@
 #define IDC_BTHash                      1069
 #define IDC_BTStop                      1069
 #define IDC_BTAUTO24                    1070
+#define IDC_BTAUTO63                    1071
+#define IDC_BTAUTO64                    1072
+#define IDC_BTAUTO32                    1073
+#define IDC_BTAUTO42                    1074
+#define IDC_BTAUTO69                    1075
+#define IDC_BTAUTO21                    1075
 
 // Next default values for new objects
 // 

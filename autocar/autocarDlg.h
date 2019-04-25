@@ -65,7 +65,7 @@ public:
   afx_msg void BTImageRecognition_5or6();  //图像识别测试
   afx_msg void BTImageRecognition_7or8();  //图像识别测试
   /* 路线相关函数********************************************/
-  afx_msg void OnBnClickedBtauto12();
+  afx_msg void OnBnClickedBtauto12();//路线测试按钮
   afx_msg void OnBnClickedBtauto23();
   afx_msg void OnBnClickedBtauto24();
   afx_msg void OnBnClickedBtauto35();
@@ -82,6 +82,13 @@ public:
   afx_msg void OnBnClickedBtauto76();
   afx_msg void OnBnClickedBtauto85();
   afx_msg void OnBnClickedBtauto86();
+  afx_msg void OnBnClickedBtauto53();
+  afx_msg void OnBnClickedBtauto54();
+  afx_msg void OnBnClickedBtauto63();
+  afx_msg void OnBnClickedBtauto64();
+  afx_msg void OnBnClickedBtauto32();
+  afx_msg void OnBnClickedBtauto42();
+  afx_msg void OnBnClickedBtauto21();
   afx_msg void OnBnClickedBtHU_LAR();
   afx_msg void OnBnClickedBtTURN_BACK();
   afx_msg void OnBnClickedPatern12();//自动驾驶用
@@ -104,6 +111,13 @@ public:
   void TEST76(void);
   void TEST85(void);
   void TEST86(void);
+  void TEST53(void);
+  void TEST54(void);
+  void TEST63(void);
+  void TEST64(void);
+  void TEST32(void);
+  void TEST42(void);
+  void TEST21(void);
   int _1To2(void);// 0x01
   int _2To3(void);// 0x02
   int _2To4(void);// 0x03
@@ -121,6 +135,13 @@ public:
   int _7To6(void);// 0x0F
   int _8To5(void);// 0x10
   int _8To6(void);// 0x11
+  int _5To3(void);// 0x12
+  int _5To4(void);// 0x13
+  int _6To3(void);// 0x14
+  int _6To4(void);// 0x15
+  int _3To2(void);// 0x16
+  int _4To2(void);// 0x17
+  int _2To1(void);// 0x18
   CString m_locationstart;
   CString m_locationnext;
   CString m_locationgold;
@@ -132,7 +153,7 @@ public:
   int chose = 0;//判断进入哪个脚本测试函数
   int exclude1 = 0;//排除标志1
   int exclude2 = 0;//排除标志2
-  int back = 1;//返回标志
+  int back = 0;//返回标志（初值为0，1表示是返回脚本）
   /* 两种模式相关函数********************************************/
   void Mode(PointMode_t pointMode, int8_t command);//传输协议
 protected:
