@@ -119,8 +119,9 @@
 #define IDC_BTAUTO64                    1072
 #define IDC_BTAUTO32                    1073
 #define IDC_BTAUTO42                    1074
-#define IDC_BTAUTO69                    1075
 #define IDC_BTAUTO21                    1075
+#define IDC_BUTTON4                     1076
+#define IDC_BTRST                       1076
 
 // Next default values for new objects
 // 
@@ -128,7 +129,7 @@
 #ifndef APSTUDIO_READONLY_SYMBOLS
 #define _APS_NEXT_RESOURCE_VALUE        131
 #define _APS_NEXT_COMMAND_VALUE         32771
-#define _APS_NEXT_CONTROL_VALUE         1074
+#define _APS_NEXT_CONTROL_VALUE         1077
 #define _APS_NEXT_SYMED_VALUE           101
 #endif
 #endif

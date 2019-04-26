@@ -211,4 +211,6 @@ private:
   double _conArea;
   //TAG: _mode的类型应该设置为一个 枚举类
   int _mode;
+public:
+	afx_msg void OnBnClickedBtrst();
 };
