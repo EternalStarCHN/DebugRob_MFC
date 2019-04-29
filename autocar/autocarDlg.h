@@ -145,8 +145,8 @@ public:
   CString m_locationstart;
   CString m_locationnext;
   CString m_locationgold;
+  int Findrst(char a[]);//判断是否重置标志
   int sign;//现态
-  //int nextn;//次态传递变量
   int next;//次态
   int step;//步骤
   int go = 0;//判断是否为起跑用，0为起跑指令
@@ -193,7 +193,8 @@ private:
   /* 私有数据区 *********************************************/
   CString _msgSerialSend;
   CString _msgSerialReceive;
-
+  CString rst="resetreset";
+  CString reset;
   CvvImage _cvvImage;
 
   /* 图形识别用 *********************************************/
