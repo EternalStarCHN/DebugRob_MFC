@@ -214,4 +214,5 @@ private:
   int _mode;
 public:
 	afx_msg void OnBnClickedBtrst();
+	afx_msg void OnBnClickedB_ClearEdit();
 };

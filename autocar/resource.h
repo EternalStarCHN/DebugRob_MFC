@@ -47,6 +47,8 @@
 #define IDC_BTCLOSE2                    1025
 #define IDC_BTSEND                      1025
 #define IDC_EDITCOLOR2                  1026
+#define IDC_BTSEND2                     1026
+#define IDC_BTCLEAR                     1026
 #define IDC_EDITCEQING                  1027
 #define IDC_EDITGYRO                    1028
 #define IDC_EDITLEFTCLOCKADD            1029
@@ -120,7 +122,6 @@
 #define IDC_BTAUTO32                    1073
 #define IDC_BTAUTO42                    1074
 #define IDC_BTAUTO21                    1075
-#define IDC_BUTTON4                     1076
 #define IDC_BTRST                       1076
 
 // Next default values for new objects
