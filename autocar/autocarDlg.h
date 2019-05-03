@@ -93,6 +93,8 @@ public:
   afx_msg void OnBnClickedBtTURN_BACK();
   afx_msg void OnBnClickedPatern12();//自动驾驶用
   afx_msg void OnBnClickedBtStop();//急停
+  afx_msg void OnBnClickedBtrst();
+  afx_msg void OnBnClickedB_ClearEdit();
   afx_msg void OnTimer(UINT_PTR nIDEvent);
   void TEST12(void);
   void TEST23(void);
@@ -212,7 +214,4 @@ private:
   double _conArea;
   //TAG: _mode的类型应该设置为一个 枚举类
   int _mode;
-public:
-	afx_msg void OnBnClickedBtrst();
-	afx_msg void OnBnClickedB_ClearEdit();
 };
