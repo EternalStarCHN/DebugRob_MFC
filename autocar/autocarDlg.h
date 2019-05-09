@@ -93,7 +93,8 @@ public:
   afx_msg void OnBnClickedBtTURN_BACK();
   afx_msg void OnBnClickedPatern12();//自动驾驶用
   afx_msg void OnBnClickedBtStop();//急停
-  afx_msg void OnBnClickedBtrst();
+  afx_msg void OnBnClickedBtrst();//重置自动驾驶
+  afx_msg void OnBnClickedBtStopautodrive();//停止自动驾驶
   afx_msg void OnBnClickedB_ClearEdit();
   afx_msg void OnTimer(UINT_PTR nIDEvent);
   void TEST12(void);

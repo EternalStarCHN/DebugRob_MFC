@@ -47,7 +47,6 @@
 #define IDC_BTCLOSE2                    1025
 #define IDC_BTSEND                      1025
 #define IDC_EDITCOLOR2                  1026
-#define IDC_BTSEND2                     1026
 #define IDC_BTCLEAR                     1026
 #define IDC_EDITCEQING                  1027
 #define IDC_EDITGYRO                    1028
@@ -123,6 +122,8 @@
 #define IDC_BTAUTO42                    1074
 #define IDC_BTAUTO21                    1075
 #define IDC_BTRST                       1076
+#define IDC_BUTTON4                     1077
+#define IDC_BT_StopAutoDrive            1077
 
 // Next default values for new objects
 // 
@@ -130,7 +131,7 @@
 #ifndef APSTUDIO_READONLY_SYMBOLS
 #define _APS_NEXT_RESOURCE_VALUE        131
 #define _APS_NEXT_COMMAND_VALUE         32771
-#define _APS_NEXT_CONTROL_VALUE         1077
+#define _APS_NEXT_CONTROL_VALUE         1078
 #define _APS_NEXT_SYMED_VALUE           101
 #endif
 #endif
