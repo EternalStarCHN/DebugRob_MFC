@@ -196,7 +196,7 @@ private:
   /* 私有数据区 *********************************************/
   CString _msgSerialSend;
   CString _msgSerialReceive;
-  CString rst="resetreset";
+  CString _datashow;
   CString reset;
   CvvImage _cvvImage;
 
@@ -215,4 +215,6 @@ private:
   double _conArea;
   //TAG: _mode的类型应该设置为一个 枚举类
   int _mode;
+public:
+	afx_msg void OnBnClickedBtclearshow();
 };
