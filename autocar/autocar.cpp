@@ -4,7 +4,6 @@
 #include "stdafx.h"
 #include "autocar.h"
 #include "autocarDlg.h"
-
 #ifdef _DEBUG
 #define new DEBUG_NEW
 #endif

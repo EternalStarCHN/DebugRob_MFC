@@ -166,7 +166,7 @@ private:
   void _OnCommReceive(LPVOID pSender, void* pBuf, DWORD InBufferCount) override;
   void _OnCommBreak(LPVOID pSender, DWORD dwMask, COMSTAT stat) override;
   //TAG:这里ImageBox应该是一个枚举类型，避免错误
-  void _ShowImageOnImageBox(int ImageBox, Mat& frame);
+  void _ShowImageOnImageBox(int ImageBox, Mat *frame);
   void _StretchBlt(int ImageBox, CDC& cdcSrc,
     int x = 0, int y = 0, int w = 48, int h = 48);
 
@@ -199,6 +199,8 @@ private:
   CString _datashow;
   CString reset;
   CvvImage _cvvImage;
+  Mat *ontimer_frame = nullptr;
+  long long cnt = 0;
 
   /* 图形识别用 *********************************************/
   const vector<pair<Mat, int>> _TARGET_IMAGE_LIST;
