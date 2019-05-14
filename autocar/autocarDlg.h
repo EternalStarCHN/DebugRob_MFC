@@ -91,11 +91,13 @@ public:
   afx_msg void OnBnClickedBtauto21();
   afx_msg void OnBnClickedBtHU_LAR();
   afx_msg void OnBnClickedBtTURN_BACK();
+  afx_msg void OnBnClickedBtHEAD_MOVE();
   afx_msg void OnBnClickedPatern12();//自动驾驶用
   afx_msg void OnBnClickedBtStop();//急停
   afx_msg void OnBnClickedBtrst();//重置自动驾驶
   afx_msg void OnBnClickedBtStopautodrive();//停止自动驾驶
   afx_msg void OnBnClickedB_ClearEdit();
+  afx_msg void OnBnClickedBtclearshow();
   afx_msg void OnTimer(UINT_PTR nIDEvent);
   void TEST12(void);
   void TEST23(void);
@@ -200,7 +202,6 @@ private:
   CString reset;
   CvvImage _cvvImage;
   Mat ontimer_frame;
-  long long cnt = 0;
 
   /* 图形识别用 *********************************************/
   const vector<pair<Mat, int>> _TARGET_IMAGE_LIST;
@@ -217,6 +218,4 @@ private:
   double _conArea;
   //TAG: _mode的类型应该设置为一个 枚举类
   int _mode;
-public:
-	afx_msg void OnBnClickedBtclearshow();
 };

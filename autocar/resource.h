@@ -51,7 +51,6 @@
 #define IDC_EDITCEQING                  1027
 #define IDC_EDITSHOW                    1027
 #define IDC_EDITGYRO                    1028
-#define IDC_BTCLEAR2                    1028
 #define IDC_BTCLEARSHOW                 1028
 #define IDC_EDITLEFTCLOCKADD            1029
 #define IDC_EDITRIGHTCLOCKADD           1030
@@ -90,6 +89,8 @@
 #define IDC_EDITNEXTLOCATION            1056
 #define IDC_BTTURN_BACK                 1056
 #define IDC_EDITGOLDLOCATION            1057
+#define IDC_BTTURN_BACK2                1057
+#define IDC_BTHEAD_MOVE                 1057
 #define IDC_BTAUTO81                    1058
 #define IDC_BTAUTO87                    1058
 #define IDC_BTAUTO71                    1059
