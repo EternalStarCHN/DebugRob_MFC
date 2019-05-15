@@ -16,6 +16,10 @@ using namespace Debug;
 
 // 自定义MFC消息常量 串口数据接收消息 @PostMessageFunc OnReceiveData()
 #define WM_RECV_SERIAL_DATA WM_USER + 101
+
+#define res34 22
+#define res56 11
+#define res78 16
 using Contors_t = vector<vector<Point>>;
 using Contor_t = vector<Point>;
 
@@ -138,6 +142,8 @@ public:
   int _8To7(void);// 0x0D
   int _7To5(void);// 0x0E
   int _7To6(void);// 0x0F
+  int _7To1(void);// 0x10
+  int _8To1(void);// 0x11
   int _8To5(void);// 0x10
   int _8To6(void);// 0x11
   int _5To3(void);// 0x12
@@ -156,8 +162,7 @@ public:
   int step;//步骤
   int go = 0;//判断是否为起跑用，0为起跑指令
   int chose = 0;//判断进入哪个脚本测试函数
-  int exclude1 = 0;//排除标志1
-  int exclude2 = 0;//排除标志2
+  int exclude = 0;//排除标志 (1:去对面台 0：直接回1台)
   int back = 0;//返回标志（初值为0，1表示是返回脚本）
   /* 两种模式相关函数********************************************/
   void Mode(PointMode_t pointMode, int8_t command);//传输协议
