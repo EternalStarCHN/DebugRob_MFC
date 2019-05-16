@@ -17,9 +17,9 @@ using namespace Debug;
 // 自定义MFC消息常量 串口数据接收消息 @PostMessageFunc OnReceiveData()
 #define WM_RECV_SERIAL_DATA WM_USER + 101
 
-#define res34 22
-#define res56 11
-#define res78 16
+#define res34 22 //3、4台图片特征值比较值
+#define res56 11 //5、6台图片特征值比较值
+#define res78 16 //7、8台图片特征值比较值
 using Contors_t = vector<vector<Point>>;
 using Contor_t = vector<Point>;
 
@@ -65,9 +65,9 @@ public:
   afx_msg void OnBnClickedBt_ImageTest();
   afx_msg void OnBnClickedBttakephoto();
   void ImageRecognition(Mat src);
-  afx_msg void BTImageRecognition_3or4();  //图像识别测试
-  afx_msg void BTImageRecognition_5or6();  //图像识别测试
-  afx_msg void BTImageRecognition_7or8();  //图像识别测试
+  afx_msg void BTImageRecognition_3or4();  //34图像识别测试
+  afx_msg void BTImageRecognition_5or6();  //56图像识别测试
+  afx_msg void BTImageRecognition_7or8();  //78图像识别测试
   /* 路线相关函数********************************************/
   afx_msg void OnBnClickedBtauto12();//路线测试按钮
   afx_msg void OnBnClickedBtauto23();
@@ -82,20 +82,12 @@ public:
   afx_msg void OnBnClickedBtauto68();
   afx_msg void OnBnClickedBtauto78();
   afx_msg void OnBnClickedBtauto87();
-  afx_msg void OnBnClickedBtauto75();
-  afx_msg void OnBnClickedBtauto76();
-  afx_msg void OnBnClickedBtauto85();
-  afx_msg void OnBnClickedBtauto86();
-  afx_msg void OnBnClickedBtauto53();
-  afx_msg void OnBnClickedBtauto54();
-  afx_msg void OnBnClickedBtauto63();
-  afx_msg void OnBnClickedBtauto64();
-  afx_msg void OnBnClickedBtauto32();
-  afx_msg void OnBnClickedBtauto42();
-  afx_msg void OnBnClickedBtauto21();
+  afx_msg void OnBnClickedBtauto71();
+  afx_msg void OnBnClickedBtauto81();
   afx_msg void OnBnClickedBtHU_LAR();
   afx_msg void OnBnClickedBtTURN_BACK();
   afx_msg void OnBnClickedBtHEAD_MOVE();
+  afx_msg void OnBnClickedBtRESET();
   afx_msg void OnBnClickedPatern12();//自动驾驶用
   afx_msg void OnBnClickedBtStop();//急停
   afx_msg void OnBnClickedBtrst();//重置自动驾驶
@@ -116,17 +108,17 @@ public:
   void TEST68(void);
   void TEST78(void);
   void TEST87(void);
-  void TEST75(void);
-  void TEST76(void);
-  void TEST85(void);
-  void TEST86(void);
-  void TEST53(void);
-  void TEST54(void);
-  void TEST63(void);
-  void TEST64(void);
-  void TEST32(void);
-  void TEST42(void);
-  void TEST21(void);
+  void TEST71(void);
+  void TEST81(void);
+  //void TEST85(void);
+  //void TEST86(void);
+  //void TEST53(void);
+  //void TEST54(void);
+  //void TEST63(void);
+  //void TEST64(void);
+  //void TEST32(void);
+  //void TEST42(void);
+  //void TEST21(void);
   int _1To2(void);// 0x01
   int _2To3(void);// 0x02
   int _2To4(void);// 0x03
@@ -140,19 +132,8 @@ public:
   int _6To8(void);// 0x0B
   int _7To8(void);// 0x0C
   int _8To7(void);// 0x0D
-  int _7To5(void);// 0x0E
-  int _7To6(void);// 0x0F
-  int _7To1(void);// 0x10
-  int _8To1(void);// 0x11
-  int _8To5(void);// 0x10
-  int _8To6(void);// 0x11
-  int _5To3(void);// 0x12
-  int _5To4(void);// 0x13
-  int _6To3(void);// 0x14
-  int _6To4(void);// 0x15
-  int _3To2(void);// 0x16
-  int _4To2(void);// 0x17
-  int _2To1(void);// 0x18
+  int _7To1(void);// 0x0E
+  int _8To1(void);// 0x0F
   CString m_locationstart;
   CString m_locationnext;
   CString m_locationgold;

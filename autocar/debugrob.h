@@ -22,7 +22,7 @@ typedef enum pointMode__ : uint8_t
 	HAND_UP = 13,                 //0x0D 举双手
 	HU_LAR = 14,				  //0x0E 先举左手再举右手
 	TURN_BACK = 15,               //0x0F 转身
-	REST = 16                    //0x10 重启
+	RESET = 16                    //0x10 重启
 } PointMode_t;
 
 namespace Debug
