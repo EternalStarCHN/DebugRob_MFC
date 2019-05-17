@@ -110,15 +110,6 @@ public:
   void TEST87(void);
   void TEST71(void);
   void TEST81(void);
-  //void TEST85(void);
-  //void TEST86(void);
-  //void TEST53(void);
-  //void TEST54(void);
-  //void TEST63(void);
-  //void TEST64(void);
-  //void TEST32(void);
-  //void TEST42(void);
-  //void TEST21(void);
   int _1To2(void);// 0x01
   int _2To3(void);// 0x02
   int _2To4(void);// 0x03
@@ -137,7 +128,7 @@ public:
   CString m_locationstart;
   CString m_locationnext;
   CString m_locationgold;
-  int Findrst(char a[]);//判断是否重置标志
+  int Findrst(char a[]);//判断是否重置标志函数
   int sign;//现态
   int next;//次态
   int step;//步骤
