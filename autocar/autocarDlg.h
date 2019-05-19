@@ -17,7 +17,7 @@ using namespace Debug;
 // 自定义MFC消息常量 串口数据接收消息 @PostMessageFunc OnReceiveData()
 #define WM_RECV_SERIAL_DATA WM_USER + 101
 
-#define res34 22 //3、4台图片特征值比较值
+#define res34 21 //3、4台图片特征值比较值
 #define res56 11 //5、6台图片特征值比较值
 #define res78 16 //7、8台图片特征值比较值
 using Contors_t = vector<vector<Point>>;
@@ -128,6 +128,7 @@ public:
   CString m_locationstart;
   CString m_locationnext;
   CString m_locationgold;
+  CString tex;//用于输出
   int Findrst(char a[]);//判断是否重置标志函数
   int sign;//现态
   int next;//次态
