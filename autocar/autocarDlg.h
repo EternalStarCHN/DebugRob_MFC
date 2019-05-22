@@ -135,7 +135,7 @@ public:
   int step;//步骤
   int go = 0;//判断是否为起跑用，0为起跑指令
   int chose = 0;//判断进入哪个脚本测试函数
-  int exclude = 0;//排除标志 (1:去对面台 0：直接回1台)
+  //int exclude = 0;//排除标志 (1:去对面台 0：直接回1台)
   int back = 0;//返回标志（初值为0，1表示是返回脚本）
   /* 两种模式相关函数********************************************/
   void Mode(PointMode_t pointMode, int8_t command);//传输协议
