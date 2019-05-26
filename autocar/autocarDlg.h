@@ -125,8 +125,6 @@ public:
   int _8To7(void);// 0x0D
   int _7To1(void);// 0x0E
   int _8To1(void);// 0x0F
-  CString m_locationstart;
-  CString m_locationnext;
   CString m_locationgold;
   CString tex;//用于输出
   int Findrst(char a[]);//判断是否重置标志函数
@@ -171,8 +169,9 @@ private:
   const Contor_t & _FindContour();
   int _TemplateMatching(Mat & srcMat);
   int _HashMatching(Mat & srcMat);
-  void CautocarDlg::_OldalgorithmMatching();
-
+  void _OldalgorithmMatching();
+  void _LKMatching();
+  void _MJMatching();
   /* 私有数据区 *********************************************/
   CString _msgSerialSend;
   CString _msgSerialReceive;
@@ -180,6 +179,8 @@ private:
   CString reset;
   CvvImage _cvvImage;
   Mat ontimer_frame;
+  double g_dConLength;
+  double g_dConArea;
 
   /* 图形识别用 *********************************************/
   const vector<pair<Mat, int>> _TARGET_IMAGE_LIST;
